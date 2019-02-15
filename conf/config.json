@@ -1,0 +1,7 @@
+{
+  "to_url": "https://trafficops.example.com",
+  "user": "to-user",
+  "passwd": "changeme",
+  "nameservers": [ "192.0.2.2", "192.0.2.3" ],
+  "networks": [ "2001:DB8::/32" ]
+}

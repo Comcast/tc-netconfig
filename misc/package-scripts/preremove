@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# remove systemd unit
+systemctl disable netconfig.service
+rm /usr/lib/systemd/system/netconfig.service
+

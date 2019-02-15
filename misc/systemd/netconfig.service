@@ -1,0 +1,11 @@
+[Unit]
+Description=Traffic Control Netconfig
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/tc-netconfig/bin/netconfig-wrapper.sh
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target

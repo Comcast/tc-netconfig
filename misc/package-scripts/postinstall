@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# install systemd unit
+cp /opt/tc-netconfig/systemd/netconfig.service /usr/lib/systemd/system
+systemctl enable netconfig.service
+
