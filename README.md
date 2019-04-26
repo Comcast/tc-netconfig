@@ -1,17 +1,15 @@
 [![Apache V2 License](http://img.shields.io/badge/license-Apache%20V2-blue.svg)](https://github.com/Comcast/tc-netconfig/blob/master/LICENSE)
 
 # tc-netconfig
-This program uses IPv6 autoconf prefix info, and optionally IPMI LAN address
-to identify an unconfigured server and configure networking. A lookup is
-performed against the Traffic Ops API, and if the IPv6 prefix is unique among
-all server objects in TO, then this is positively ID's the machine.
+This program aids in the autoconfiguration of newly deployed servers that are part of an [Apache Traffic Control CDN](https://trafficcontrol.apache.org/), using IPv6 autoconf prefix info and optionally IPMI LAN address to identify an unconfigured server and complete the network config. A lookup is performed against the Traffic Ops API, and if the IPv6 prefix is unique among all server objects in TO, then this is positively ID's the machine.
 
-As a backup method (in the case where prefixes may be shared between multiple
-servers), we can optionally attempt to obtain the BMC LAN IP via IPMI, and
-use this to lookup the host in TO.
+As a backup method (in the case where prefixes may be shared between multiple servers), we can optionally attempt to obtain the BMC LAN IP via IPMI, and use this to lookup the host in TO.
 
-Optionally, this program will also set the system hostname using the value
-discovered from Traffic Ops.
+Optionally, this program will also set the system hostname using the value discovered from Traffic Ops.
+
+## Supported operating systems
+
+So far, all testing has been performed on CentOS 7 hosts.
 
 ## Configuration
 
