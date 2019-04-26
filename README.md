@@ -1,3 +1,5 @@
+[![Apache V2 License](http://img.shields.io/badge/license-Apache%20V2-blue.svg)](https://github.com/Comcast/tc-netconfig/blob/master/LICENSE)
+
 # tc-netconfig
 This program uses IPv6 autoconf prefix info, and optionally IPMI LAN address
 to identify an unconfigured server and configure networking. A lookup is
